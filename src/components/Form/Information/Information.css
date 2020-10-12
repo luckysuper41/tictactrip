@@ -1,0 +1,70 @@
+.information{
+    position: relative;
+    display: block;
+    min-width: 370px;
+    width: 370px;
+    height: 460px;
+    background: #fff ;
+    color: #000;
+    margin: 0px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.information .content{
+    padding: 20px;
+}
+
+.content h2{
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 0;
+    margin: 23px 0 40px 0;
+}
+
+.information .content .content-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.information .content .content-box img{
+    margin-right: 10px;
+}
+
+.information .content .content-box .text{
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.information .content .content-box .text span{
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #21314D;
+}
+
+.information .content .content-footer{
+    display: block;
+    margin-top: 40px;
+}
+
+.information .content .content-footer p{
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.information .content .content-footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.information .content .content-footer div a{
+    text-decoration: none;
+    margin: 20px 3px 0;
+}

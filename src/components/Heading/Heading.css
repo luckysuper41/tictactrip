@@ -1,0 +1,29 @@
+.heading{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.heading p{
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.heading p a{ 
+    color: #000;
+    text-decoration: #000 underline; 
+}

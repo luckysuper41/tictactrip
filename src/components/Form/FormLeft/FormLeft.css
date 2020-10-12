@@ -1,0 +1,161 @@
+.formleft{
+    position: relative;
+    display: block;
+    min-width: 370px;
+    width: 370px;
+    height: 460px;
+    background: #fff ;
+    color: #000;
+    margin: 0px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.formleft form{
+    padding: 20px;
+}
+
+.formleft form h2{
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 0;
+    margin: 23px 0 40px 0;
+}
+
+.formleft form .input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.formleft form .input-box button.swap-button{
+    position: absolute;
+    top: 23px;
+    left: 313px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    padding: 5px;
+    border: 0.5px solid #000;
+    z-index: 5;
+    cursor: pointer;
+    transition: all 0.5s;
+    background: rgba(255, 255, 255);
+    display: none;
+    opacity: 0;
+}
+
+.formleft form .input-box button.swap-button:hover{
+    background:rgb(223, 223, 223);
+}
+
+.formleft form .input-box input.inputDeparture:valid ~ button.swap-button{
+    display: block;
+    opacity: 1;
+}
+.formleft form .input-box input.inputArrival:valid ~ button.swap-button{
+    display: block;
+    opacity: 1;
+}
+
+
+.formleft form .input-box input{
+    margin: 2px 0;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background: rgba(223, 223, 223, 0.7);
+    transition: all 0.5s;
+    text-transform: capitalize;
+}
+
+.formleft form .input-box input:hover,
+.formleft form .input-box input:valid{
+    background: rgb(211, 210, 210);
+}
+
+.formleft form .input-box input.inputDeparture{
+    background-image: url("https://assets.trainline.eu/assets/images/from-793fd74a5d09b687beb849fab15ae7a6.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.formleft form .input-box input.inputArrival{
+    background-image: url("https://assets.trainline.eu/assets/images/to-3c0a8d746fa1464b9bd1f7be13b6b127.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.formleft form .input-box input.inputAller{
+    background-image: url("https://assets.trainline.eu/assets/images/calendar-outward-021f4ddf731281274d7726a793a08a79.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.formleft form .input-box input.inputRetour{
+    background-image: url("https://assets.trainline.eu/assets/images/calendar-inward-5d0aa59596158d156fcfa9e846b93e52.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.formleft form .input-box input.member{
+    background-image: url("https://assets.trainline.eu/assets/images/passenger-47004cd84d9b731383854ab84bf01f56.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+}
+
+.formleft form .input-box button.Add{
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-top: 3px;
+    min-height: 25px;
+    background: rgb(1, 195, 167, 0.6);
+    transition: all 0.2s;
+    color: #333;
+}
+
+.formleft form .input-box button.Add:hover,
+.formleft form .input-box button.Add:active{
+    background: rgb(1, 195, 167);
+    color: #000;
+}
+
+.formleft form .input-box a{
+    text-decoration: none;
+    margin: 15px 0 5px 0;
+    pointer-events: none;
+}
+
+.formleft form .input-box a span{ 
+    color: #000;
+    font-size: 0.9rem;
+    pointer-events: painted;
+}
+
+.formleft form .input-box a span:hover{
+    border-bottom: 0.5px solid #000;
+}
+
+.formleft form .input-box input[type=submit]{
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: rgb(1, 195, 167);
+    color: #fff;
+    transition: all 0.3s ;
+}
+
+.formleft form .input-box input[type=submit]:hover,
+.formleft form .input-box input[type=submit]:active{
+    background: rgb(3, 163, 139);
+}

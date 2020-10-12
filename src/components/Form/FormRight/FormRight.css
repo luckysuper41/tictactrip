@@ -1,0 +1,145 @@
+.formright{
+    position: relative;
+    display: block;
+    min-width: 370px;
+    width: 370px;
+    height: 460px;
+    background: #fff ;
+    color: #000;
+    margin: 0px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+.formright .formlist{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formright .formlist button.exit-button{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(255, 0, 0);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    opacity: 0.85;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.formright .formlist button.exit-button:hover,
+.formright .formlist button.exit-button:active{
+    opacity: 1;
+}
+
+.formright .formlist h2{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+.formright .formlist div.list-ville{
+
+    padding: 0 4px;
+    overflow: auto;
+    max-height: 280px;
+    overflow-x: hidden;
+    
+}
+
+.formright .formlist .arrow-depart{
+    position: absolute;
+    top: 89px;
+    left: -34px;
+    transition: all 0.3s;
+}
+.formright .formlist .arrow-arrive{
+    position: absolute;
+    top: 130px;
+    left: -34px;
+    transition: all 0.3s;
+}
+.formright .formlist .arrow-depart::before,
+.formright .formlist .arrow-arrive::before{
+
+    background-color: rgb(255, 255, 255);
+    content: " ";
+    display: block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 29px;
+    height: 29px;
+}
+
+
+
+.formright .formlist div.list-ville button.button-list{
+
+    width: 100%;
+    border: 1px solid #8b8282;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255);
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: left;
+    color: rgb(145, 145, 145);
+    outline: none;
+    text-transform: capitalize;
+}
+
+.formright .formlist div.list-ville button.button-list:hover{
+    background: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+}
+
+.formright .formlist div.list-ville button.button-list img{
+    display: inline;
+    width: 14px;
+    height: 14px;
+    padding: 0 3px;
+}
+
+
+.formright .formlist .form-footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.formright .formlist .form-footer button{
+    color: rgb(1, 151, 129);
+    border: 0.5px solid rgb(1, 195, 167);
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: all 0.3s;
+    background: cornsilk;
+    cursor: pointer;
+    outline: none;
+}
+
+.formright .formlist .form-footer button:hover{
+    background: rgba(63, 250, 222, 0.3);
+}

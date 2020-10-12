@@ -1,0 +1,9 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 70%;
+    justify-content: center;
+    margin: 50px auto;
+    padding-bottom: 70px;
+}

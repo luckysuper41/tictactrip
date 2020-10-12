@@ -1,0 +1,191 @@
+.header{
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:  5px 50px;
+}
+
+.header .header-logo{
+    z-index: 9999;
+}
+
+.header-box{
+    display: block;
+}
+
+.header-box ul{
+    list-style: none;
+    display: inline;
+}
+
+.header-box ul li{
+    display: inline;
+    margin: 0 2px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-box ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header-box ul li.bgr-white{
+    background: rgb(231, 231, 231);
+    
+}
+
+.header-box ul li a.col-blue{
+    color: rgb(5, 6, 56);
+}
+
+.header-box ul li:hover,
+.header-box ul li:active{
+    background: rgba(175, 175, 175, 0.2);   
+}
+
+.header-box ul li.bgr-white:hover,
+.header-box ul li.bgr-white:active{
+    background: rgb(255, 255, 255);
+    
+}
+
+.header-box ul li.non-active{
+    pointer-events: none;
+    color: #fff;
+}
+
+/*Toggle*/
+
+.toggle-header #check{
+    display: none;
+}
+
+.toggle-header label #toggle{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+.toggle-header label #toggle:before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.toggle-header label #toggle:after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.toggle-header #check:checked ~ label #toggle:before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.toggle-header #check:checked ~ label #toggle:after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.toggle-header #check:checked ~ label #toggle{
+    top: 15px;
+    right: 20px;
+    transform: rotate(-720deg);
+}
+
+.toggle-header #check:checked ~ .sidebar{
+    width: 100%;
+}
+
+.toggle-header .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.toggle-header .sidebar div{
+    height: 60px;
+    overflow: hidden;
+}
+
+
+.toggle-header .sidebar ul{
+    list-style: none;
+}
+
+.toggle-header .sidebar ul li a{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-header .sidebar ul a span{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.toggle-header ul li:hover,.wrapper-header ul li:active a{
+    background: rgb(57, 62, 70, 0.5);
+}
+
+.toggle-header ul li:hover a span,.wrapper-header ul li:active a span{
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.link-text{
+    position: absolute;
+    right: -999px;
+}
+
+.toggle-header #check:checked ~ .sidebar ul a span.link-text{
+    right: 0;
+}
+
+
+@media only screen and (max-width: 950px){
+    .header-box{
+         display: none;
+    }
+
+    .toggle-header label #toggle{
+         display: block;
+    }
+}
