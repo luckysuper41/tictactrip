@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tictactrip/static/css/main.0c191f6d.chunk.css",
+    "main.js": "/tictactrip/static/js/main.cdf4a195.chunk.js",
+    "main.js.map": "/tictactrip/static/js/main.cdf4a195.chunk.js.map",
+    "runtime-main.js": "/tictactrip/static/js/runtime-main.b71306a5.js",
+    "runtime-main.js.map": "/tictactrip/static/js/runtime-main.b71306a5.js.map",
+    "static/js/2.b48b07bd.chunk.js": "/tictactrip/static/js/2.b48b07bd.chunk.js",
+    "static/js/2.b48b07bd.chunk.js.map": "/tictactrip/static/js/2.b48b07bd.chunk.js.map",
+    "index.html": "/tictactrip/index.html",
+    "precache-manifest.67a1cfb71b1866e84c2f824ebc2f214d.js": "/tictactrip/precache-manifest.67a1cfb71b1866e84c2f824ebc2f214d.js",
+    "service-worker.js": "/tictactrip/service-worker.js",
+    "static/css/main.0c191f6d.chunk.css.map": "/tictactrip/static/css/main.0c191f6d.chunk.css.map",
+    "static/js/2.b48b07bd.chunk.js.LICENSE.txt": "/tictactrip/static/js/2.b48b07bd.chunk.js.LICENSE.txt",
+    "static/media/info1.svg": "/tictactrip/static/media/info1.4104d38c.svg",
+    "static/media/info2.svg": "/tictactrip/static/media/info2.def69128.svg",
+    "static/media/info3.svg": "/tictactrip/static/media/info3.9a9836f4.svg",
+    "static/media/logo.svg": "/tictactrip/static/media/logo.2c62cd6e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b71306a5.js",
+    "static/js/2.b48b07bd.chunk.js",
+    "static/css/main.0c191f6d.chunk.css",
+    "static/js/main.cdf4a195.chunk.js"
+  ]
+}
