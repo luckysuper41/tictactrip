@@ -120,14 +120,15 @@
 }
 
 .toggle-header .sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0px;
     width: 0%;
-    height: 100vh;
+    height: 100%;
     background: rgba(0, 0, 0);
     transition: all 0.5s ease-in-out;
     z-index: 10;
+    overflow: hidden;
 }
 
 .toggle-header .sidebar div{
@@ -179,6 +180,7 @@
     right: 0;
 }
 
+/*Responsive*/
 
 @media only screen and (max-width: 950px){
     .header-box{

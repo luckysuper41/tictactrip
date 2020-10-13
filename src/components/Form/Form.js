@@ -39,10 +39,10 @@ export default function Form() {
                     arrive={arrive} 
                     setArrive={setArrive}  
                     select={select} 
+                    setSwapform={setSwapform}
                     setInputArrRef={setInputArrRef}
                     setInputDepRef={setInputDepRef}
                     setInputDateArrRef={setInputDateArrRef}
-                    setSwapform={setSwapform}
                     />
             }
         </div>

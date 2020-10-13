@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import PropTypes from 'prop-types';
 import './FormRight.css';
 import axios from 'axios';
 
@@ -24,7 +25,6 @@ export default function FormRight(props) {
 
 
     useEffect(() => {
-
         const getVilles = async () => {
             try{
                 const res = await axios.get(URL)
@@ -45,9 +45,10 @@ export default function FormRight(props) {
             return <h2>5 villes les plus populaires:</h2>
         }
         if(URL === URL5VillesPopular){
-            return <h2>5 villes les plus populaires au départ de {(select === true ? arrive : depart)}:</h2>
+            return <h2>5 villes les plus populaires au départ de <span className="name-ville">{(select === true ? arrive : depart)}</span>:</h2>
         }
     }
+
     const Depart_villes = () =>{
         return(
                 <div className="list-ville">
@@ -56,15 +57,13 @@ export default function FormRight(props) {
                         type="button"
                         className="button-list"
                         key={ville.city_id} 
-                        onClick={(event) => {
+                        onClick={() => {
                             (!arrive ? setInputArrRef() : setInputDateArrRef())
                             setDepart(ville.unique_name)
-                            event.preventDefault()
                         }}
                         ><img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="loca-icon" />{ville.unique_name}</button>
                     })}
                 </div>
-
         );
     }
 
@@ -76,17 +75,15 @@ export default function FormRight(props) {
                             type="button"
                             className="button-list"
                             key={ville.city_id} 
-                            onClick={(event) => {
+                            onClick={() => {
                                 (!depart ? setInputDepRef() : setInputDateArrRef())
                                 setArrive(ville.unique_name)
-                                event.preventDefault()
                             }}
                             ><img src="https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg" alt="loca-icon" />{ville.unique_name}</button>
                         })}
                     </div>
         );
     }
-
 
     return (
         <div className="formright">
@@ -105,4 +102,17 @@ export default function FormRight(props) {
             </div>
         </div>
     )
+}
+
+// PropTypes
+FormRight.propTypes = {
+    arrive: PropTypes.string, 
+    setArrive: PropTypes.func, 
+    depart: PropTypes.string,
+    setDepart: PropTypes.func,
+    select: PropTypes.bool, 
+    setInputDepRef: PropTypes.func, 
+    setInputArrRef: PropTypes.func, 
+    setInputDateArrRef: PropTypes.func, 
+    setSwapform: PropTypes.func
 }

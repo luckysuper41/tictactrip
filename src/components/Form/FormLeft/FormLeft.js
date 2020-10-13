@@ -1,11 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './FormLeft.css';
 
 export default function FormLeft(props) {
 
     const {arrive, setArrive, depart,setDepart, setSelect, setSwapform, inputDepRef, inputArrRef, inputDateArrRef} = props;
-
-
 
     const swap_button = () => {
         let swap;
@@ -29,7 +28,6 @@ export default function FormLeft(props) {
                     name="inputDeparture"
                     value={depart}
                     onChange={(event) => {
-                        event.preventDefault();
                         setDepart(event.target.value)}}
                     onFocus={() => {
                         setSwapform(true)
@@ -46,7 +44,6 @@ export default function FormLeft(props) {
                     name="inputArrival"
                     value={arrive}
                     onChange={(event) => {
-                        event.preventDefault();
                         setArrive(event.target.value)}}
                     onFocus={() => {
                         setSwapform(true)
@@ -98,4 +95,17 @@ export default function FormLeft(props) {
             </form>
         </div>
     )
+}
+
+// PropTypes
+FormLeft.propTypes = {
+    arrive: PropTypes.string, 
+    setArrive: PropTypes.func, 
+    depart: PropTypes.string,
+    setDepart: PropTypes.func,
+    setSelect: PropTypes.func, 
+    setSwapform: PropTypes.func, 
+    inputDepRef: PropTypes.object, 
+    inputArrRef: PropTypes.object, 
+    inputDateArrRef: PropTypes.object
 }
